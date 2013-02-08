@@ -15,3 +15,7 @@ products_name_starts_C_price_greater_10.each do |product|
 end
 
 puts products_quantity_less_5 = Product.where('stock_quantity < 5').count
+
+prod_cat_id = a_product.category_id
+a_product_category = Category.find(prod_cat_id)
+puts a_product_category.name
